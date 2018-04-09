@@ -2,38 +2,41 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-     <title required>
+    <title required>
         Form Here
     </title>
-        <meta charset="utf-8">
-        <title > Homework seven</title>
-        <style>
- 
-
-        </style>
+    <link rel="stylesheet" href="7_01.css" />
+    <meta charset="utf-8">
+        
+        
 </head>
 <body>
-        <caption align="center" required aria-required="true">Form Here</caption>
+        <caption align="center" required ="true">Form Here</caption>
         <hr noshade size="2" collor="black"></hr>
 <form>
    <fieldset>
-       <p>
-            <label>Name</label>
-            <input type="text" name="name" required>
-        </p>
+       <div class="wrapper" >
+                <label for="Name">Name:</label>
+                <input id="Name" type="text" name="name" required>
+                <span class="tooltip"> Введите имя </span>      
+        </div>
+           
         
-        <p>
-            <label>Email</label>
-            <input type="email" name="email" required>
-        </p>
-        <p>
-            <label>website</label>
-            <input type="url" name="website" required>
-        </p>
-        <p>
-            <label>message</label>
-            <input type="textarea" name="message" required>
-        </p>
+        <div class="wrapper">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" required>
+                <span class="tooltip1">Введите Email</span>
+        </div>
+        <div class="wrapper">
+                <label  for="website">Website:  </label>
+                <input id="website" type="url" name="website" required>
+                <span class="tooltip2">Введите адрес сайт</span>
+        </div>
+        <div class="wrapper">
+                <label  for="message">Message:</label>
+                <input id="message" type="textarea" name="message" required>
+                <span class="tooltip3">Введите сообщение</span>
+        </div>
     </fieldset>
     <input type= "submit" name="submit">
 </form>
